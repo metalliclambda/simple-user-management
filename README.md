@@ -1,12 +1,12 @@
 # Simple account manager
-This is a simple account manager , for signup , login, and resetting passwords.
+This is a simple account manager , for signup , login, and resetting passwords and Email authentication and authorization.
 
 ### In the future :
 I will implement this project temporary in a host and put the link here later.
 In the Future, More apps, will be added , and registered users can use them.
 
 ### Introduction :
-You can signup, and verify your Email, and login and change password, and logout and in the case of forgetting the password, ask for reset link to your Email.
+You can signup, and verify your Email, and login and change password, and logout and in the case of forgetting the password, ask for reset link to your Email. 
 
 Passwords will save in the mongoDB hashed.
 
