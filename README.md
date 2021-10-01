@@ -54,6 +54,8 @@ Profile Page :
 ### Run the app
 after establishing MongoDB database
 
+You need to set your Mailing service Data in the ./utils/mail-options.js , or for get the confirmation link or reset link, just log the link in the ./controllers/auth.js
+
 Open terminal in the project folder
 
 
