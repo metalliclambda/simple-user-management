@@ -1,0 +1,58 @@
+.login {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.login label {
+  font-weight: bold;
+}
+
+.login div {
+  margin: 1rem;
+}
+
+.login label,
+.login input {
+  display: block;
+}
+
+.login input {
+  width: 100%;
+  height: 1.5rem;
+}
+
+.login button {
+  background-color: #333;
+  color: white;
+  height: 2rem;
+  width: auto;
+  font-size: large;
+}
+
+.submit-button {
+  text-align: center;
+}
+
+.user-msg {
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+
+.forgot-pass-link {
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+
+.user-msg {
+  height: 3rem;
+  background-color: green;  
+  color: black;
+  padding: 1rem;
+}
+
+.user-msg--error {
+  background-color: tomato;
+}

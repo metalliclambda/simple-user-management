@@ -1,0 +1,21 @@
+<%- include('./includes/head.ejs') %>
+
+<link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+    <%- include('./includes/navigation.ejs') %>
+
+    <h1>Some internal Error occurred </h1>
+    <p>We are working on them</p>
+    
+    <div class="body">
+        <% if(errorMessage){ %>
+            <div class="user-msg <%= isError ? 'user-msg--error' : '' %>">
+                <p><%= errorMessage %></p>                       
+            </div>     
+        <% } %>            
+    </div>
+    
+    <%- include('./includes/footer.ejs') %>
+    

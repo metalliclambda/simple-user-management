@@ -1,0 +1,29 @@
+<div class="header-nav">
+    <% if (!isLoggedIn) { %>
+        <div>
+            <a class="<%= path === '/' ? 'active' : ''  %>" href="/">Home</a>
+            <a class="<%= path === 'login' ? 'active' : ''  %>" href="/login">Login</a>
+            <a class="<%= path === 'signup' ? 'active' : ''  %>" href="/signup">Signup</a>
+        </div>
+    <% } else { %>
+        <div>
+            <form id="logout" action="/logout" method="post">
+                <a href="#" onclick="submitLogout()">Logout</a>     
+                <input type="hidden" name="_csrf" value="<%= csrfToken %>">       
+            </form>
+            <script>
+                function submitLogout() {
+                    document.getElementById('logout').submit();                    
+                }
+            </script>
+
+            <a class="<%= path === 'app1' ? 'active' : ''  %>" href="/">App1</a>
+            <a class="<%= path === 'app2' ? 'active' : ''  %>" href="/">App2</a>
+            <a class="<%= path === 'app3' ? 'active' : ''  %>" href="/">App3</a>
+
+        </div>            
+    <% } %>
+    <div class="user-bar">
+        <a class="<%= path === 'userProfile' ? 'active' : ''  %>" href="/user/profile">Profile</a>
+    </div>
+</div>
